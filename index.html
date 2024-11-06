@@ -6,16 +6,44 @@
     <title>About-Computers</title>
     <link rel="shortcut icon" href="About-Computers.gif" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <section class="c" id="Home">
-        <button onclick="CTTL()" class="pad mar" id="themebtn">
-            Change Theme To Light
+    <nav id="Nav">
+        <button onclick="web()" class="l marr" style="background-color: #808080;">
+            <img src="About-Computers.gif" alt="logo" id="logo">
         </button>
-        <button onclick="CTTD()" class="pad mar" id="themebtn2">
-            Change Theme To Dark
+        <button onclick="web()" class="l marr" id="name">
+            About-Computers
         </button>
+        <div class="dropdown">
+            <button class="l dropbtn" id="cop">
+                <span id="colon">:</span>
+            </button>
+            <div class="dropdown-content l">
+            </div>
+        </div>
+        <button onclick="Navnottop()" class="r marr" id="Navnottop">
+            Nav bar Not On Top.
+        </button>
+        <button onclick="Navtop()" class="r marr" id="Navtop">
+            Nav Bar On Top.
+        </button>
+        <button onclick="aboutus()" class="r marr" id="us">
+            About Us
+        </button>
+    </nav>
+    <section class="c pad" id="Home">
+        <div class="c mar">
+            <button class="c gif" onclick="btngen()">
+                <img src="Generations.gif" class="homeconbtn">
+            </button>
+        </div>
+        <div class="c mar">
+            <button class="c gif" onclick="btnlan()">
+                <img src="Languages.gif" class="homeconbtn">
+            </button>
+        </div>
     </section>
 </body>
 </html>

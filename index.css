@@ -1,182 +1,179 @@
-/*
-	Use for margin :
-	Landscape :
-	margin-top: 2.5vw;
-	margin-bottom: 2.5vw;
-	margin-left: 2.5vw;
-	margin-right: 2.5vw;
-	Portrait : 
-	margin-top: 5vw;
-	margin-bottom: 5vw;
-	margin-left: 5vw;
-	margin-right: 5vw;
-	&
-	Use for padding :
-	Landscape :
-	padding-top: 2.5vw;
-	padding-bottom: 2.5vw;
-	padding-left: 2.5vw;
-	padding-right: 2.5vw;
-	Portrait : 
-	padding-top: 5vw;
-	padding-bottom: 5vw;
-	padding-left: 5vw;
-	padding-right: 5vw;
-*/
 body {
     margin: 0;
     padding: 0;
     border: 0;
+	background-color: #010101;
 }
-.c {
-    text-align: center;
-    display: block;
+.l {
     margin: 0;
     padding: 0;
     border: 0;
+    float: left;
+    text-align: left;
+}
+.c {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.r {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: right;
+    float: right;
+}
+.mar {
+	margin: 2.5vw;
+}
+.marl {
+	margin-left: 2.5vw;
+}
+.marr {
+	margin-right: 2.5vw;
+}
+.mart {
+	margin-top: 2.5vw;
+}
+.marb {
+	margin-bottom: 2.5vw;
+}
+.mar2 {
+	margin: 5vw;
+}
+.marl2 {
+	margin-left: 5vw;
+}
+.marr2 {
+	margin-right: 5vw;
+}
+.mart2 {
+	margin-top: 5vw;
+}
+.marb2 {
+	margin-bottom: 5vw;
+}
+.pad {
+	padding: 2.5vw;
+}
+.padl {
+	padding-left: 2.5vw;
+}
+.padr {
+	padding-right: 2.5vw;
+}
+.padt {
+	padding-top: 2.5vw;
+}
+.padb {
+	padding-bottom: 2.5vw;
+}
+.pad2 {
+	padding: 5vw;
+}
+.padl2 {
+	padding-left: 5vw;
+}
+.padr2 {
+	padding-right: 5vw;
+}
+.padt2 {
+	padding-top: 5vw;
+}
+.padb2 {
+	padding-bottom: 5vw;
+}
+.responsive {
+    width: auto;
+    height: auto;
+}
+.gif {
+    background-color: transparent;
+}
+#Nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #FEFEFE;
+    z-index: 1000;
 }
 button {
     margin: 0;
     padding: 0;
     border: 0;
+    display: block;
 }
-#Home{
-    background-color: #202020;
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
-#themebtn {
-    color: #E0E0E0;
+button:hover {
+    cursor: pointer;
+}
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+}
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#logo {
+    height: auto;
+	width: 5vw;
+}
+#Nav {
+    background-color: #FEFEFE;
+}
+#name, nav div div button, nav button, #themebtn, #themebtn2 {
+    color: #010101;
     background-color: #808080;
+	font-size: 1.5vw;
+	border-radius: 0.5vw;
 }
-#themebtn2 {
-    color: #E0E0E0;
-    background-color: #808080;
+.dropdown, .dropbtn {
+    display: block;
 }
-@media (orientation:landscape){
-    #themebtn, #themebtn2 {
-        font-size: 5vw;
-    }.mar {
-		margin: 2.5vw;
-	}
-	.marl {
-		margin-left: 2.5vw;
-	}
-	.marr {
-		margin-right: 2.5vw;
-	}
-	.mart {
-		margin-top: 2.5vw;
-	}
-	.marb {
-		margin-bottom: 2.5vw;
-	}
-	.mar2 {
-		margin: 5vw;
-	}
-	.marl2 {
-		margin-left: 5vw;
-	}
-	.marr2 {
-		margin-right: 5vw;
-	}
-	.mart2 {
-		margin-top: 5vw;
-	}
-	.marb2 {
-		margin-bottom: 5vw;
-	}
-	.pad {
-		padding: 2.5vw;
-	}
-	.padl {
-		padding-left: 2.5vw;
-	}
-	.padr {
-		padding-right: 2.5vw;
-	}
-	.padt {
-		padding-top: 2.5vw;
-	}
-	.padb {
-		padding-bottom: 2.5vw;
-	}
-	.pad2 {
-		padding: 5vw;
-	}
-	.padl2 {
-		padding-left: 5vw;
-	}
-	.padr2 {
-		padding-right: 5vw;
-	}
-	.padt2 {
-		padding-top: 5vw;
-	}
-	.padb2 {
-		padding-bottom: 5vw;
-	}
+#colon {
+    display: none;
 }
-@media (orientation:portrait){
-    #themebtn, #themebtn2 {
-        font-size: 5vw;
-    }
-	.mar {
-		margin: 5vw;
-	}
-	.marl {
-		margin-left: 5vw;
-	}
-	.marr {
-		margin-right: 5vw;
-	}
-	.mart {
-		margin-top: 5vw;
-	}
-	.marb {
-		margin-bottom: 5vw;
-	}
-	.mar2 {
-		margin: 10vw;
-	}
-	.marl2 {
-		margin-left: 10vw;
-	}
-	.marr2 {
-		margin-right: 10vw;
-	}
-	.mart2 {
-		margin-top: 10vw;
-	}
-	.marb2 {
-		margin-bottom: 10vw;
-	}
-	.pad {
-		padding: 5vw;
-	}
-	.padl {
-		padding-left: 5vw;
-	}
-	.padr {
-		padding-right: 5vw;
-	}
-	.padt {
-		padding-top: 5vw;
-	}
-	.padb {
-		padding-bottom: 5vw;
-	}
-	.pad2 {
-		padding: 10vw;
-	}
-	.padl2 {
-		padding-left: 10vw;
-	}
-	.padr2 {
-		padding-right: 10vw;
-	}
-	.padt2 {
-		padding-top: 10vw;
-	}
-	.padb2 {
-		padding-bottom: 10vw;
-	}
+.dropdown:hover #colon {
+    display: inline;
+}
+.nus {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+}
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+#Home {
+    background-color: #010101;
+    color: #FEFEFE;
+}
+.homeconbtn{
+	height: auto;
+	width: 50vw;
+	border-radius: 1vw;
 }
