@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	background-color: #010101;
+}
+/* Utility Class */
+.l {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+    text-align: left;
+}
+.c {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.r {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: right;
+    float: right;
+}
+.mar {
+	margin: 2.5vw;
+}
+.marl {
+	margin-left: 2.5vw;
+}
+.marr {
+	margin-right: 2.5vw;
+}
+.mart {
+	margin-top: 2.5vw;
+}
+.marb {
+	margin-bottom: 2.5vw;
+}
+.mar2 {
+	margin: 5vw;
+}
+.marl2 {
+	margin-left: 5vw;
+}
+.marr2 {
+	margin-right: 5vw;
+}
+.mart2 {
+	margin-top: 5vw;
+}
+.marb2 {
+	margin-bottom: 5vw;
+}
+.pad {
+	padding: 2.5vw;
+}
+.padl {
+	padding-left: 2.5vw;
+}
+.padr {
+	padding-right: 2.5vw;
+}
+.padt {
+	padding-top: 2.5vw;
+}
+.padb {
+	padding-bottom: 2.5vw;
+}
+.pad2 {
+	padding: 5vw;
+}
+.padl2 {
+	padding-left: 5vw;
+}
+.padr2 {
+	padding-right: 5vw;
+}
+.padt2 {
+	padding-top: 5vw;
+}
+.padb2 {
+	padding-bottom: 5vw;
+}
+.responsive {
+    width: auto;
+    height: auto;
+}
+
+/*0 space*/
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+}
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: margin-top 1s ease;
+}
+.gif {
+    background-color: transparent;
+}
+
+/* Nav Bar */
+#Nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: darkslategray;
+}
+button:hover {
+    cursor: pointer;
+}
+#logo {
+    height: auto;
+	width: 5vw;
+}
+.school-logo {
+    background-color: white;
+    border-radius: 0.33vw;
+}
+nav button{
+	font-size: 1.5vw;
+}
+.nus {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+}
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+}
+#Home {
+    background-color: #010101;
+    color: #FEFEFE;
+}
+h1, h2, h3, li, a, .homebtn, button{
+    font-weight: bold;
+    font-family: cursive;
+    color: transparent;
+}
+h1 {
+    font-size: 45px;
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(to left, red, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 0.25vw red;
+    animation: text-animate 1s infinite alternate;
+}
+@keyframes text-animate{
+    100%{
+    text-shadow: 0 0 0.25vw blue;
+    }
+}
+h2 {
+    padding: 5px;
+    font-size: 25px;
+    background: linear-gradient(to left, purple, yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 0.125vw purple;
+    animation: text-animate2 0.75s infinite alternate;
+}
+@keyframes text-animate2{
+    100%{
+    text-shadow: 0 0 0.125vw yellow;
+    }
+}
+a{
+    text-decoration: none;
+    transition:1s;
+    font-size: 25px;
+    font-family: "Edu AU VIC WA NT Pre";
+    background: linear-gradient(to left, lightgreen, darkblue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 0.1vw lightgreen;
+    animation: text-animate-a 0.75s infinite alternate;
+}
+@keyframes text-animate-a{
+    100%{
+    text-shadow: 0 0 0.1vw darkblue;
+    }
+}
+span{
+    font-weight: bold;
+}
+h3{
+    margin-left: 10px;
+    font-size: 24px;
+    background: linear-gradient(to left, hotpink, blue );
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 0.1vw hotpink;
+    animation: text-animate3 0.5s infinite alternate;
+}
+@keyframes text-animate3{
+    100%{
+    text-shadow: 0 0 0.1vw blue;
+    }
+}
+ul, ol{
+    font-size: 24px;
+    font-family: Josefin Sans;
+    padding-top: 10px;
+}
+li{
+    padding-top: 15px;
+    background: linear-gradient(to left, #AB10AB, #CDCD45);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 0 #AB10AB;
+    animation: text-animate-li 0.5s infinite alternate;
+}
+@keyframes text-animate-li{
+    100%{
+    text-shadow: 0 0 0 #CDCD45;
+    }
+}
+.genimg{
+    margin: 2.5vw;
+    width: 45vw;
+    float: right;
+    border-radius: 5vw;
+}
+.abtn{
+    font-size: 2vw;
+    text-decoration: none;
+    margin: 1.5vw;
+}
+.res{
+    height: auto;
+    width: 40%;
+    border-radius: 5vw;
+}
+.LANA {
+    color: #76AB29;
+}
+.LANA:hover {
+    color: #77ab2980;
+}
+.inoutimg {
+    width: 80%;
+    border-radius: 1vw;
+    border: 0.3vw solid  #00FF00;
+}
+.owlink {
+    display: block;
+}
+.testimonial {
+	border-radius: 5vw;
+	display: flex;
+	background-color: #4087DD;
+    width: 90vw;
+}
+.testex{
+    color: transparent;
+	border-radius: 4.71vw;
+    font-size: 1.71vw;
+    width: 26.875vw;
+    background: linear-gradient(to left, #AB10AB, #CDCD45);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 0 #AB10AB;
+    animation: text-animate-tes 0.5s infinite alternate;
+}
+@keyframes text-animate-tes {
+    100%{
+    text-shadow: 0 0 0 #CDCD45;
+    }
+}
+.ourphoto {
+	border-radius: 9.4245vw;
+	display: block;
+    width: 15vw;
+    height: auto;
+    animation: panime 2.5s infinite;
+}
+@keyframes panime {
+    0%, 100% {
+        border: 0;
+        margin: 1.5vw;
+    }
+    50% {
+        border: 1.5vw dotted yellow;
+        margin: 0;
+    }
+}
+.testex, .ourphoto {
+    border: 0;
+}
+.homebtn {
+    width: auto;
+    font-size: 9vw;
+    background: linear-gradient(to left, pink, darkblue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 1vw pink;
+    animation: text-animate-li 1.5s 2.5s infinite alternate, move-btn 2.5s 1s 1;
+}
+@keyframes text-animate-li {
+    0% {
+        text-shadow: 0 0 1vw pink;
+    }
+    100% {
+        text-shadow: 0 0 1vw darkblue;
+    }
+}
+@keyframes move-btn {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-47.5%);
+  }
+  66.66% {
+    transform: translateX(47.5%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+nav button{
+    background: linear-gradient(to left, lightpink, lightgreen);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0 0 0 lightpink;
+    animation: text-animate-nabtn 0.25s infinite alternate;
+}
+@keyframes text-animate-nabtn{
+    100%{
+    text-shadow: 0 0 0 lightgreen;
+    }
+}
+#discoball {
+    width: 25vw;
+    border-radius: 100%;
+    background: linear-gradient(to right, #FF0000, #00FF00, #0000FF);
+    animation: discoball 0.001s infinite;
+}
+@keyframes discoball {
+    50% {
+        background: linear-gradient(to right, #0000FF, #FF0000, #00FF00);
+    }
+    100% {
+        background: linear-gradient(to right, #00FF00, #0000FF, #FF0000);
+    }
+}
+ @media (orientation:portrait) {
+    #Nav {
+        display: block;
+    }
+    #logo {
+        width: 12.5vw;
+        display: block;
+    }
+    #name, nav button{
+        float: left;
+        font-size: 4vw;
+        display: block;
+    }
+    #us, #Navnottop {
+        float: right;
+    }
+    .abtn {
+        font-size: 4vw;
+    }
+    .testimonial {
+        display: block;
+    }
+    .testex {
+        width: 85vw;
+        font-size: 7.5vw;
+    }
+    .ourphoto {
+        width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testex, .ourphoto {
+        border: 0;
+    }
+ }
