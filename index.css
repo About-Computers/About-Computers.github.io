@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-	background-color: #010101;
+    background-color: #010101;
 }
 /* Utility Class */
 .l {
@@ -310,17 +310,6 @@ li{
 	display: block;
     width: 15vw;
     height: auto;
-    animation: panime 2.5s infinite;
-}
-@keyframes panime {
-    0%, 100% {
-        border: 0;
-        margin: 1.5vw;
-    }
-    50% {
-        border: 1.5vw dotted yellow;
-        margin: 0;
-    }
 }
 .testex, .ourphoto {
     border: 0;
