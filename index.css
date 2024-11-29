@@ -400,6 +400,10 @@ nav button{
         background: linear-gradient(to right, #00FF00, #0000FF, #FF0000);
     }
 }
+#comp-lab {
+    width: 95vw;
+    border-radius: 2vw;
+}
  @media (orientation:portrait) {
     #Nav {
         display: block;
