@@ -136,6 +136,7 @@ section {
     justify-content: space-around;
     width: 100%;
     background-color: darkslategray;
+    z-index: 1000;
 }
 button:hover {
     cursor: pointer;
@@ -247,6 +248,7 @@ li{
     -webkit-background-clip: text;
     text-shadow: 0 0 0 #AB10AB;
     animation: text-animate-li 0.5s infinite alternate;
+    word-wrap: break-word;
 }
 @keyframes text-animate-li{
     100%{
@@ -264,17 +266,6 @@ li{
     text-decoration: none;
     margin: 1.5vw;
 }
-.res{
-    height: auto;
-    width: 40%;
-    border-radius: 5vw;
-}
-.LANA {
-    color: #76AB29;
-}
-.LANA:hover {
-    color: #77ab2980;
-}
 .inoutimg {
     width: 80%;
     border-radius: 1vw;
@@ -288,6 +279,8 @@ li{
 	display: flex;
 	background-color: #4087DD;
     width: 90vw;
+    position: relative;
+    z-index: -2;
 }
 .testex{
     color: transparent;
@@ -306,10 +299,46 @@ li{
     }
 }
 .ourphoto {
-	border-radius: 9.4245vw;
 	display: block;
     width: 15vw;
     height: auto;
+	border-radius: 9.4245vw;
+}
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.imgc {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 9.4245vw;
+    position: relative;
+}
+.imgc::before, .imgc::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 9.4245vw;
+    z-index: -1;
+    background-image: conic-gradient(from var(--angle), red, orange, yellow, green, blue, indigo, purple, red);
+    bottom: 50%;
+    left: 50%;
+    translate: -50% 50%;
+    padding: 1.5vw;
+    animation: bdrdan 2.5s infinite linear;
+}
+.imgc::before {
+    filter: blur(2.5vw);
+}
+@keyframes bdrdan {
+    0% {
+        --angle: 0deg;
+    }
+    100% {
+        --angle: 360deg;
+    }
 }
 .testex, .ourphoto {
     border: 0;
@@ -404,5 +433,12 @@ nav button{
     }
     .testex, .ourphoto {
         border: 0;
+    }
+    .imgc {
+        margin: 10vw 2.5vw 10vw 2.5vw;
+
+    }
+    .imgc::before, .imgc::after {
+        padding: 3vw;
     }
  }
