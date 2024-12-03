@@ -175,7 +175,7 @@ h1, h2, h3, li, a, .homebtn, button{
     color: transparent;
 }
 h1 {
-    font-size: 45px;
+    font-size: 3.5vw;
     text-align: center;
     color: transparent;
     background: linear-gradient(to left, red, blue);
@@ -190,8 +190,7 @@ h1 {
     }
 }
 h2 {
-    padding: 5px;
-    font-size: 25px;
+    font-size: 2vw;
     background: linear-gradient(to left, purple, yellow);
     background-clip: text;
     -webkit-background-clip: text;
@@ -204,9 +203,9 @@ h2 {
     }
 }
 a{
+    font-size: 2vw;
     text-decoration: none;
     transition:1s;
-    font-size: 25px;
     font-family: "Edu AU VIC WA NT Pre";
     background: linear-gradient(to left, lightgreen, darkblue);
     background-clip: text;
@@ -219,12 +218,8 @@ a{
     text-shadow: 0 0 0.1vw darkblue;
     }
 }
-span{
-    font-weight: bold;
-}
 h3{
-    margin-left: 10px;
-    font-size: 24px;
+    font-size: 2vw;
     background: linear-gradient(to left, hotpink, blue );
     background-clip: text;
     -webkit-background-clip: text;
@@ -237,12 +232,12 @@ h3{
     }
 }
 ul, ol{
-    font-size: 24px;
+    font-size: 2vw;
     font-family: Josefin Sans;
-    padding-top: 10px;
+    padding-top: 1vw;
 }
 li{
-    padding-top: 15px;
+    padding-top: 1.5vw;
     background: linear-gradient(to left, #AB10AB, #CDCD45);
     background-clip: text;
     -webkit-background-clip: text;
@@ -271,18 +266,12 @@ li{
     border-radius: 1vw;
     border: 0.3vw solid  #00FF00;
 }
-.owlink {
-    display: block;
-	position: relative;
-	z-index: 10;
-}
 .testimonial {
 	border-radius: 5vw;
 	display: flex;
 	background-color: #4087DD;
     width: 90vw;
     position: relative;
-    z-index: -2;
 }
 .testex{
     color: transparent;
@@ -345,6 +334,9 @@ li{
 .testex, .ourphoto {
     border: 0;
 }
+.owlink {
+    display: block;
+}
 .homebtn {
     width: auto;
     font-size: 9vw;
@@ -389,21 +381,36 @@ nav button{
     }
 }
 #discoball {
-    width: 25vw;
+    width: 75vh;
+    height: 75vh;
+    border-radius: 100vw;
+    position: relative;
+}
+#discoball::before, #discoball::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    translate: -50% 50%;
     border-radius: 100%;
-    background: linear-gradient(to right, #FF0000, #00FF00, #0000FF);
-    animation: discoball 0.001s infinite;
+    background-image: conic-gradient(from var(--angle), red, orange, yellow, green, blue, indigo, purple, red);
+    animation: discoball 0.00001s linear infinite;
+}
+#discoball::before {
+    filter: blur(100vw);
 }
 @keyframes discoball {
-    50% {
-        background: linear-gradient(to right, #0000FF, #FF0000, #00FF00);
+    0% {
+        --angle: 0deg;
     }
     100% {
-        background: linear-gradient(to right, #00FF00, #0000FF, #FF0000);
+        --angle: 360deg;
     }
 }
 #comp-lab {
-    width: 95vw;
+    width: 92.5vw;
     border-radius: 2vw;
 }
  @media (orientation:portrait) {
@@ -442,9 +449,12 @@ nav button{
     }
     .imgc {
         margin: 10vw 2.5vw 10vw 2.5vw;
-
     }
     .imgc::before, .imgc::after {
         padding: 3vw;
+    }
+    #discoball {
+        width: 75vw;
+        height: 75vw;
     }
  }

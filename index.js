@@ -27,12 +27,3 @@ function adjustContentMargin() {
     const navbarHeight = navbar.offsetHeight;
     content.style.marginTop = navbarHeight + "px";
 }
-window.addEventListener("load", adjustDiscoballHeight);
-window.addEventListener("resize", adjustDiscoballHeight);
-function adjustDiscoballHeight() {
-    const discoball = document.getElementById("discoball");
-    if (discoball) {
-        const discoballw = discoball.offsetWidth;
-        discoball.style.height = discoballw + "px";
-    }
-}
